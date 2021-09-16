@@ -1,6 +1,6 @@
 body {
   font-family: Poppins,sans-serif;
-  position: relative;
+  /* position: relative; */
   background: #19181A;
   color: rgba(250,177,98,.7);
   font-size: 16px;
@@ -20,10 +20,35 @@ nav {
   font-size: 32px;
 }
 
-.image {
+#slider-container {
   position: relative;
-  max-width: 256px;
 }
+
+.image {
+  /* position: relative; */
+}
+
+#left, #right {
+  cursor: pointer;
+  position: absolute;
+  top: 50%;
+  width: auto;  
+            padding: 16px;  
+            margin-top: -22px;  
+            color: rgba(250,177,98,.7); 
+            font-weight: bold;  
+            font-size: 18px;  
+            transition: 0.6s ease;  
+            border-radius: 0 3px 3px 0;  
+}
+
+#right {  
+  right: 0;  
+  border-radius: 3px 0 0 3px;  
+}  
+  #left:hover, #right:hover {  
+      background-color: rgba(115, 115, 115, 0.8);  
+  }
 
 img {
   margin-left: 50px;
@@ -32,6 +57,7 @@ img {
 .txt-overlay {
   position: absolute;
   /* position: relative; */
+  max-width: 256px;
   bottom: 150px;
   /* top: 200px; */
   /* right: 100px; */

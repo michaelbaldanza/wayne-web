@@ -24,8 +24,8 @@
       </nav>
     </header>
     <div id="container">
-    <section>
-      <div class="image">
+    <section id="slider-container">
+      <div class="image showSlide">
         <img src="media/wayne-praying.jpeg" width=388.5 height=583>
         <div class="txt-overlay">
           <p class="big-word">
@@ -37,7 +37,7 @@
           </p>
         </div>
       </div>
-      <div class="image">
+      <div class="image showSlide">
         <img src="media/tomb-edited.jpeg" width=579.4 height=434.6>
         <div class="txt-overlay">
           <p class="big-word">
@@ -49,7 +49,7 @@
           </p>
         </div>
       </div>
-      <div class="image">
+      <div class="image showSlide">
         <img src="media/openings.jpeg" width=468 height=702.86>
         <div class="txt-overlay">
           <p class="big-word">
@@ -61,7 +61,7 @@
           </p>
         </div>
       </div>
-      <div class="image">
+      <div class="image showSlide">
         <img src="media/belize-sarnac.jpeg" width=375 height=500>
         <div class="txt-overlay">
           <p class="big-word">
@@ -74,6 +74,9 @@
         </div>
       </div>
     </section>
+    <!-- navigation arrows -->
   </div>
+  <a id="left" onClick="nextSlide(-1)"><</a>
+    <a id="right" onClick="nextSlide(1)">></a>
 </body>
 </html>
