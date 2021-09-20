@@ -8,75 +8,64 @@
   <link href="css/main.css" rel="stylesheet">
   <script defer src="js/main.js"></script>
 </head>
-<body>
+<body onload="autoSlide();">
   
     <header>
       <nav>
-        <a id="logo">
+        <a id="logo" href="./index.html">
           Wayne Walder
         </a>
         <div id="nav-els">
-          <a class="nav-item">Meditations</a>
-          <a class="nav-item">Essays</a>
-          <a class="nav-item">Sacred Journeys</a>
-          <a class="nav-item">Art and Music</a>
+          <span>
+            <a class="nav-item" href="./guided-meditations.html">Meditations</a>
+          </span>
+          
+          <a class="nav-item" href="./essays.html">Essays</a>
+          <a class="nav-item" href="./sacred-journeys.html">Sacred Journeys</a>
+          <a class="nav-item" href="./art.html">Art and Music</a>
         </div>
       </nav>
     </header>
-    <div id="container">
     <section id="slider-container">
-      <div class="image showSlide">
-        <img src="media/wayne-praying.jpeg" width=388.5 height=583>
-        <div class="txt-overlay">
-          <p class="big-word">
-            Lorem ipsum dolor sit amet.
-          </p>
-          <p>
-            Consectetur adipiscing elit. Integer ultricies mi nec elit pretium
-            porta. Ut pellentesques mollis magna et.
-          </p>
+      <div id="first-column">
+        <div class="image showSlide">
+          <img src="media/wayne-praying.jpeg" width=auto height=640>
+          <div class="txt-overlay">
+            <p class="big-word">
+              Lorem ipsum dolor sit amet.
+            </p>
+            <p>
+              Consectetur adipiscing elit. Integer ultricies mi nec elit pretium
+              porta. Ut pellentesques mollis magna et.
+            </p>
+          </div>
         </div>
       </div>
-      <div class="image showSlide">
-        <img src="media/tomb-edited.jpeg" width=579.4 height=434.6>
-        <div class="txt-overlay">
-          <p class="big-word">
-            Lorem ipsum dolor sit amet.
-          </p>
-          <p>
-            Consectetur adipiscing elit. Integer ultricies mi nec elit pretium
-            porta. Ut pellentesques mollis magna et.
-          </p>
-        </div>
-      </div>
-      <div class="image showSlide">
-        <img src="media/openings.jpeg" width=468 height=702.86>
-        <div class="txt-overlay">
-          <p class="big-word">
-            Lorem ipsum dolor sit amet.
-          </p>
-          <p>
-            Consectetur adipiscing elit. Integer ultricies mi nec elit pretium
-            porta. Ut pellentesques mollis magna et.
-          </p>
-        </div>
-      </div>
-      <div class="image showSlide">
-        <img src="media/belize-sarnac.jpeg" width=375 height=500>
-        <div class="txt-overlay">
-          <p class="big-word">
-            Lorem ipsum dolor sit amet.
-          </p>
-          <p>
-            Consectetur adipiscing elit. Integer ultricies mi nec elit pretium
-            porta. Ut pellentesques mollis magna et.
-          </p>
-        </div>
-      </div>
+      <div id="second-column">
+        <a href="./guided-meditations.html">
+          <img 
+            class="img-link" src="media/crops/tomb-edited-crop.jpeg"
+            width=200
+            height=200
+          >
+        </a>
+        <a href="./spiritual-direction.html">
+          <img
+            class="img-link"
+            src="media/crops/openings-crop.jpeg"
+            width=200
+            height=200
+          >
+        </a>
+        <a href="./sacred-journeys.html">
+          <img
+            class="img-link"
+            src="media/crops/belize-sarnac-crop.jpeg"
+            width=200
+            height=200
+          >
+        </a>
+      </div> 
     </section>
-    <!-- navigation arrows -->
-  </div>
-  <a id="left" onClick="nextSlide(-1)"><</a>
-    <a id="right" onClick="nextSlide(1)">></a>
 </body>
 </html>
